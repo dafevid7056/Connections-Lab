@@ -1,0 +1,50 @@
+body {
+  background-color: #a47ff5;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: left;
+  padding-left: 60px;
+}
+p {
+  text-align: left;
+  font-size: 18px;
+  padding: 10px 80px;
+}
+iframe {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 80px;
+}
+q {
+  font-style: italic;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 16px;
+  padding: 10px 300px;
+}
+li {
+  font-size: 18px;
+  padding: 7px 80px;
+}
+.author {
+  font-style: normal;
+  display: block;
+  text-align: right;
+  margin: 20px auto;
+  font-size: 14px;
+  padding: 10px 300px;
+}
+img {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 80px;
+}
