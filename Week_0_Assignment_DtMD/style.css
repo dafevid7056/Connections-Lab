@@ -4,19 +4,24 @@ body {
 
 h1 {
   text-align: center;
+  color: darkblue;
 }
 
 h2 {
   text-align: center;
+  color: darkblue;
 }
 h3 {
   text-align: left;
   padding-left: 60px;
+  font-style: italic;
+  color: darkblue
 }
 p {
   text-align: left;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px 80px;
+  color: aliceblue;
 }
 iframe {
   display: block;
@@ -30,10 +35,12 @@ q {
   margin: 20px auto;
   font-size: 16px;
   padding: 10px 300px;
+  color: aliceblue;
 }
 li {
   font-size: 18px;
   padding: 7px 80px;
+  color: aliceblue;
 }
 .author {
   font-style: normal;
@@ -42,6 +49,7 @@ li {
   margin: 20px auto;
   font-size: 14px;
   padding: 10px 300px;
+  color: aliceblue;
 }
 img {
   display: block;
