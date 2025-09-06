@@ -1,0 +1,132 @@
+/* 
+I installed a custom font called "Amiamie" and included it in the project directory. 
+The font files are located in the "webfonts" folder.
+*/
+
+@font-face {
+    font-family: 'Amiamie';
+    src: url(./webfonts/Amiamie-Black.woff2) format('woff2'),
+        url(./webfonts/Amiamie-BlackItalic.woff2) format('woff2'),
+        url(./webfonts/Amiamie-BlackItalicRound.woff) format('woff2'),
+        url(./webfonts/Amiamie-BlackRound.woff2) format('woff2'),
+        url(./webfonts/Amiamie-Italic.woff2) format('woff2'),
+        url(./webfonts/Amiamie-ItalicRound.woff2) format('woff2'),
+        url(./webfonts/Amiamie-Light.woff2) format('woff2'),
+        url(./webfonts/Amiamie-LightItalic.woff2) format('woff2'),
+        url(./webfonts/Amiamie-Regular.woff2) format('woff2')
+        url(./webfonts/Amiamie-RegularRound.woff2) format('woff2'),
+}
+/* This is the main styling for the webpage */
+
+body {
+    background-color: #020722;
+    padding: 40px;
+}
+
+h1 {
+    font-family: 'Amiamie-BlackItalicRound';
+    font-size: 27px;
+    color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Amiamie-Light';
+    font-size: 18px;
+    color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 20px;
+}
+
+.header_logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header_logo_img {
+    width: 100px;
+    height: auto;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.navigation_link {
+    font-family: 'Amiamie-RegularRound';
+    font-size: 18px;
+    color: lightcoral;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.box_text {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.box_planets {
+    min-height: 641px;
+    background-image: url(./Images_PNGs/Zodiac_Wheel.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.planet {
+    width: 50px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.birth_date_button {
+    font-family: 'amiamie-RegularRound';
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.birth_date_input {
+    font-family: 'amiamie-RegularRound';
+    font-size: 14px;
+    color: lightblue;
+    margin: 15px;
+}
+
+button {
+    font-family: 'amiamie-RegularRound';
+    font-size: 14px;
+}
+
+.button_action {
+    margin: 15px;
+}
+
+.footer_text {
+    text-align: center;
+    font-family: 'Amiamie-LightItalic';
+    font-size: 13px;
+    color: lightcoral;
+    margin-top: 40px;
+}

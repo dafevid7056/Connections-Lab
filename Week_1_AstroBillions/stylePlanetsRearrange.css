@@ -1,0 +1,349 @@
+/* 
+I installed a custom font called "Amiamie" and included it in the project directory. 
+The font files are located in the "webfonts" folder.
+*/
+
+@font-face {
+    font-family: 'Amiamie';
+    src: url(./webfonts/Amiamie-Black.woff2) format('woff2'),
+        url(./webfonts/Amiamie-BlackItalic.woff2) format('woff2'),
+        url(./webfonts/Amiamie-BlackItalicRound.woff) format('woff2'),
+        url(./webfonts/Amiamie-BlackRound.woff2) format('woff2'),
+        url(./webfonts/Amiamie-Italic.woff2) format('woff2'),
+        url(./webfonts/Amiamie-ItalicRound.woff2) format('woff2'),
+        url(./webfonts/Amiamie-Light.woff2) format('woff2'),
+        url(./webfonts/Amiamie-LightItalic.woff2) format('woff2'),
+        url(./webfonts/Amiamie-Regular.woff2) format('woff2') url(./webfonts/Amiamie-RegularRound.woff2) format('woff2'),
+}
+
+/* This is the main styling for the webpage */
+
+body {
+    background-color: #020722;
+    padding: 40px;
+}
+
+h1 {
+    font-family: 'Amiamie-BlackItalicRound';
+    font-size: 27px;
+    color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Amiamie-Light';
+    font-size: 18px;
+    color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 20px;
+}
+
+.header_logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header_logo_img {
+    width: 100px;
+    height: auto;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.navigation_link {
+    font-family: 'Amiamie-RegularRound';
+    font-size: 18px;
+    color: lightcoral;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.box_text {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.box_planets {
+    min-height: 641px;
+    background-image: url(./Images_PNGs/Zodiac_Wheel.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.planet {
+    width: 50px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.birth_date_button {
+    font-family: 'amiamie-RegularRound';
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.birth_date_input {
+    font-family: 'amiamie-RegularRound';
+    font-size: 14px;
+    color: lightblue;
+    margin: 15px;
+}
+
+button {
+    font-family: 'amiamie-RegularRound';
+    font-size: 14px;
+}
+
+.button_action {
+    margin: 15px;
+}
+
+.footer_text {
+    text-align: center;
+    font-family: 'Amiamie-LightItalic';
+    font-size: 13px;
+    color: lightcoral;
+    margin-top: 40px;
+}
+
+/* Animations for the planets moving to their positions on the zodiac wheel */
+
+#planet1 {
+    animation: move1 3s ease-in-out forwards;
+}
+
+@keyframes move1 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(180px, 60px);
+    }
+}
+
+#planet2 {
+    animation: move2 3s ease-in-out forwards;
+}
+
+@keyframes move2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(500px, -99px);
+    }
+}
+
+#planet3 {
+    animation: move3 3s ease-in-out forwards;
+}
+
+@keyframes move3 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(210px, 55px);
+    }
+}
+
+#planet4 {
+    animation: move4 3s ease-in-out forwards;
+}
+
+@keyframes move4 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(109px, -180px);
+    }
+}
+
+#planet5 {
+    animation: move5 3s ease-in-out forwards;
+}
+
+@keyframes move5 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-22px, 111px);
+    }
+
+}
+
+#planet6 {
+    animation: move6 3s ease-in-out forwards;
+}
+
+@keyframes move6 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(200px, 133px);
+    }
+}
+
+#planet7 {
+    animation: move7 3s ease-in-out forwards;
+}
+
+@keyframes move7 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100px, -233px);
+    }
+}
+
+#planet8 {
+    animation: move8 3s ease-in-out forwards;
+}
+
+@keyframes move8 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-280px, -190px);
+    }
+}
+
+#planet9 {
+    animation: move9 3s ease-in-out forwards;
+}
+
+@keyframes move9 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-170px, 111px);
+    }
+}
+
+#planet10 {
+    animation: move10 3s ease-in-out forwards;
+}
+
+@keyframes move10 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-400px, -130px);
+    }
+}
+
+#planet11 {
+    animation: move11 3s ease-in-out forwards;
+}
+
+@keyframes move11 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-210px, -140px);
+    }
+}
+
+.lucky_number {
+    opacity: 1;
+    background-color: lightcoral;
+    position: absolute;
+    top: 53%;
+    left: 41%;
+    font-family: 'Amiamie-RegularRound';
+    font-size: 111px;
+    color: lightcyan;
+    text-align: center;
+    animation: pop 15s ease-in-out forwards;
+}
+
+@keyframes pop {
+    0% {
+        transform: translate(0, -200px);
+        opacity: 0;
+    }
+
+    90% {
+        transform: translate(0, -200px);
+        opacity: 0; 
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+.lucky_text {
+    opacity: 1;
+    background-color: lightcoral;
+    position: absolute;
+    top: 73%;
+    left: 11%;
+    font-family: 'Amiamie-RegularRound';
+    font-size: 44px;
+    color: lightcyan;
+    text-align: center;
+    animation: pop2 15s ease-in-out forwards;
+}
+
+@keyframes pop2 {
+    0% {
+        transform: translate(0, 200px);
+        opacity: 0;
+    }
+
+    90% {
+        transform: translate(0, 200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
