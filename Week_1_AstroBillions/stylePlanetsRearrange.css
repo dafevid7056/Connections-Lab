@@ -35,8 +35,8 @@ p {
     font-family: 'Amiamie-Light';
     font-size: 18px;
     color: lightblue;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
 }
 
 .header {
@@ -138,10 +138,6 @@ button {
 }
 
 /* Animations for the planets moving to their positions on the zodiac wheel */
-
-
-/* Animations for the planets moving to their positions on the zodiac wheel */
-/* Balanced percentages - middle ground between too small and too large */
 
 #planet1 {
     animation: move1 3s ease-in-out forwards;
