@@ -1,0 +1,46 @@
+
+body {
+    margin: 5%;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container for story text*/
+.story {
+    max-width: 70%;
+    text-align: center;
+    padding: 2rem;
+}
+
+#conclusion {
+    display: none;
+}
+
+#forestbg {
+    width: 70vw;
+    height: calc(70vw / 1.73);
+    background-image: url('./Imgs/Forest_Background.webp');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#character {
+    position: relative;
+    width: 20vw;
+    height: auto;
+    z-index: 2;
+    opacity: 1;
+}
+
+.options {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
