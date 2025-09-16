@@ -13,11 +13,12 @@ body {
     text-align: center;
     padding: 2rem;
 }
-
+/* Initially hide the conclusion section */
 #conclusion {
     display: none;
 }
 
+/* Used an image as a background for the forest section */
 #forestbg {
     width: 70vw;
     height: calc(70vw / 1.73);
@@ -29,6 +30,7 @@ body {
     position: relative;
 }
 
+/* The mother is set to be seen in the beginning */
 #character {
     position: relative;
     width: 20vw;
