@@ -1,5 +1,4 @@
-/* Body styling. background color is dark to look like a swamp forest */
-/* Hide reaction shrek by default */
+/* Hide reaction shrek, conclusion, and footer by default */
 #reaction {
     display: none;
     position: absolute;
@@ -30,7 +29,7 @@
     min-width: 60px;
     height: auto;
 }
-
+/* the background is a seamless pattern to simulate grass */
 body {
     margin: 5%;
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -80,6 +79,7 @@ body {
     width: 40vw;
     height: 40vh;
     display: grid;
+    /* I used grid to arrange the trees in an organized way */
     grid-template-columns: repeat(3, max-content);
     grid-template-rows: repeat(3, max-content);
     gap: 0;
@@ -105,6 +105,7 @@ body {
     width: 20vw;
     height: 20vh;
     display: grid;
+    /* I used grid to arrange the villagers in the same way as the trees */
     grid-template-columns: repeat(3, max-content);
     grid-template-rows: repeat(3, max-content);
     gap: 1.5em;

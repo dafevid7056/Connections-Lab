@@ -12,19 +12,20 @@ duck.addEventListener("mouseover", function() {
     }
 });
 
-// Accessing the big scrollable world and the footer text
+// Accessing the big scrollable world, the footer text, the conclusion text, and the monster by their IDs
 let bigworld = document.getElementById("bigworld");
 let output = document.getElementById("footer-scr");
 let conclusion = document.getElementById("conclusion");
 let monster = document.getElementById("shrek");
-
+// When the user scrolls, a clue appears in the footer
 bigworld.addEventListener("scroll", (event) => {
     console.log("scrolling");
     output.textContent = "keep scrolling...";
 });
 
+// When the user stops scrolling, after 4 seconds, the conclusion and monster appear
 let scrolldown = document.getElementById("bigworld");
-
+// Using the event 'scrollend' to detect when scrolling stops
 scrolldown.addEventListener("scrollend", (event) => {
     console.log("scrolldown");
         if (scrolldown) {
@@ -34,10 +35,10 @@ scrolldown.addEventListener("scrollend", (event) => {
             }, 4000);
         }
 });
-
+// When the monster is clicked, a reaction image appears
 monster.addEventListener("click", function() {
     console.log("The monster has been clicked!");
-    // Toggle the reaction image
+    // Toggle the reaction image so you get to the end of the interaction
     let reaction = document.getElementById("reaction");
     if (reaction) {
         if (reaction.style.display === "block") {
