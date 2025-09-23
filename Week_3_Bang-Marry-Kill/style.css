@@ -1,0 +1,43 @@
+/* General styling for the body, headings, and paragraphs */
+body {
+    font-family: Helvetica;
+    background-color: mintcream;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    position: relative;
+    text-align: center;
+    color: #333;
+}
+
+h3 {
+    margin: 10px 0 5px 0;
+    color: #444;
+}
+
+p {
+    color: #555;
+    font-size: 14px;
+}
+/* the container for the portraits displays the three boxes in a row */
+.portraits {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+/* the container for each picture and its description */
+.portrait {
+    display: flex;
+    flex-direction: column;
+    background: lightblue;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
