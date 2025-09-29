@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Amiamie';
+    src: url(./WebFonts/Amiamie-Regular.woff2) format('woff2'),
+        url(./WebFonts/Amiamie-BlackItalic.woff2) format('woff2'),
+        url(./WebFonts/Amiamie-Light.woff2) format('woff2'),
+        url(./WebFonts/Amiamie-lightItalic.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Basteleur-Bold';
+    src: url(./WebFonts/Basteleur-Bold.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Basteleur-Moonlight';
+    src: url(./WebFonts/Basteleur-Moonlight.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Interlope-Regular';
+    src: url(./WebFonts/Interlope-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Sligoil';
+    src: url(./WebFonts/Sligoil-Micro.woff2) format('woff2');
+}
+
+/* -------------------------------------------------------------------------- */
+/*           General styling for the body, headings, and paragraphs           */
+/* -------------------------------------------------------------------------- */
+body {
+    background-color: #F2F2F2;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Amiamie-BlackItalic', Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align: center;
+    color: #111;
+}
+
+h3 {
+    font-family: 'Amiamie-Italic', Arial, Helvetica, sans-serif;
+    font-weight: light;
+    font-style: italic;
+    margin: 10px 0 5px 0;
+    color: #222;
+}
+
+h4 {
+    font-family: 'Amiamie-Light', Arial, Helvetica, sans-serif;
+    font-weight: light;
+    margin: 5px 0;
+    color: #333;
+}
+
+p {
+    font-family: 'Amiamie-Light', Arial, Helvetica, sans-serif;
+    color: #444;
+    font-size: 14x;
+    text-align: center;
+}
+
+#instructions {
+    font-family: 'Amiamie-Light', Arial, Helvetica, sans-serif;
+    color: #444;
+    font-size: 21px;
+    text-align: center;
+    margin: 20px;
+}
+
+.character-description {
+    font-family: 'Amiamie-Light', Arial, Helvetica, sans-serif;
+    color: #444;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 8px;
+}
+#instructions {
+    display: block;
+}
+/* ---- the container for the portraits displays the three boxes in a row --- */
+.portraits {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+#character-selection {
+    display: block;
+}
+/* ----------- the container for each picture and its description ----------- */
+.portrait {
+    display: flex;
+    flex-direction: column;
+    background: #F2F2F2;
+    border: 1px solid #F299A9;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+/* Styling for the submit button */
+#submitButton {
+    font-family: 'Amiamie-Regular', Arial, sans-serif;
+    color: #222;
+    background: white;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    width: 160px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submitButton:hover {
+    background: #e6f3ff;
+}
+
+#submitButton:disabled {
+    background: #f0f0f0;
+    color: #999;
+    cursor: not-allowed;
+}
+
+#canvas-section {
+    display: none; /* Hidden by default, shown when images are loaded */
+    text-align: center;
+    margin: 20px;
+}
+
+#step2 {
+    display: none;
+}
+
+/* --------------------- The style for the p5.Js canvas --------------------- */
+canvas{
+	display: block;
+	margin: 10px auto;
+    background: #F2F2F2;
+    border: 1px solid #F299A9;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}

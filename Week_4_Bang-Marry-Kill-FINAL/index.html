@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Bang Marry Kill</title>
+</head>
+<body>
+<!-- ------------------------------ The title ------------------------------- -->
+    <h1>You're walking through the MET when you encounter these three</h1>
+    <p id="instructions">¿What's your move with each one?</p>
+<!-- ----------------------------------------------------------------------- -->
+<!--         The main division where the portraits will be displayed         -->
+<!-- ----------------------------------------------------------------------- -->
+    <div id="character-selection">
+        <div class="portraits">
+<!-- ---------------------- First character to choose ---------------------- -->
+            <section class="portrait">
+                <img id="person1" alt="Person 1">
+                <h3 class="character name" id="name1"></h3>
+                <h4 class="Artist" id="artist1"></h4>
+                <p class="character-description" id="description1"></p>
+                <!-- where you choose what you'll do with it -->
+                <section class="dropdownmenu">
+                    <select id="select1" name="options">
+                        <option value="bang">Bang</option>
+                        <option value="marry">Marry</option>
+                        <option value="kill">Kill</option>
+                    </select>
+                </section>
+            </section>
+<!-- ------------------- The second character to choose -------------------- -->
+            <section class="portrait">
+                <img id="person2" alt="Person 2">
+                <h3 class="character name" id="name2"></h3>
+                <h4 class="Artist" id="artist2"></h4>
+                <p class="character-description" id="description2"></p>
+                <!-- where you choose what you'll do with it -->
+                <section class="dropdownmenu">
+                    <select id="select2" name="options">
+                        <option value="bang">Bang</option>
+                        <option value="marry">Marry</option>
+                        <option value="kill">Kill</option>
+                    </select>
+                </section>
+            </section>
+<!-- -------------------- The third character to choose -------------------- -->
+            <section class="portrait">
+                <img id="person3" alt="Person 3">
+                <h3 class="character name" id="name3"></h3>
+                <h4 class="Artist" id="artist3"></h4>
+                <p class="character-description" id="description3"></p>
+                <!-- where you choose what you'll do with it -->
+                <section class="dropdownmenu">
+                    <select id="select3" name="options">
+                        <option value="bang">Bang</option>
+                        <option value="marry">Marry</option>
+                        <option value="kill">Kill</option>
+                    </select>
+                </section>
+            </section>
+        </div>
+<!-- ------------------ The button to submit your choices ------------------ -->
+        <section class="button">
+            <button id="submitButton">I've chosen!</button>
+        </section>
+    </div>
+    <div id="canvas-section">
+<!-- ----------------------------------------------------------------------- -->
+<!--         The main division where the portraits will be displayed         -->
+<!-- ----------------------------------------------------------------------- -->
+        <p id="step2">Your MET love story, hookup, and murder case, now in wallpaper form</p>
+        <section id="canvas-section"></section>
+    </div>
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
