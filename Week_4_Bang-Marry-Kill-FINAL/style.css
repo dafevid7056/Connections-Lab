@@ -5,14 +5,17 @@
         url(./WebFonts/Amiamie-Light.woff2) format('woff2'),
         url(./WebFonts/Amiamie-lightItalic.woff2) format('woff2');
 }
+
 @font-face {
     font-family: 'Basteleur-Bold';
     src: url(./WebFonts/Basteleur-Bold.woff2) format('woff2');
 }
+
 @font-face {
     font-family: 'Basteleur-Moonlight';
     src: url(./WebFonts/Basteleur-Moonlight.woff2) format('woff2');
 }
+
 @font-face {
     font-family: 'Interlope-Regular';
     src: url(./WebFonts/Interlope-Regular.woff2) format('woff2');
@@ -76,9 +79,11 @@ p {
     text-align: center;
     margin-top: 8px;
 }
+
 #instructions {
     display: block;
 }
+
 /* ---- the container for the portraits displays the three boxes in a row --- */
 .portraits {
     display: flex;
@@ -91,6 +96,7 @@ p {
 #character-selection {
     display: block;
 }
+
 /* ----------- the container for each picture and its description ----------- */
 .portrait {
     display: flex;
@@ -100,7 +106,7 @@ p {
     border-radius: 5px;
     padding: 10px;
     width: 30%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
@@ -134,7 +140,8 @@ p {
 }
 
 #canvas-section {
-    display: none; /* Hidden by default, shown when images are loaded */
+    display: none;
+    /* Hidden by default, shown when images are loaded */
     text-align: center;
     margin: 20px;
 }
@@ -143,15 +150,19 @@ p {
     display: none;
 }
 
+#titleStep2 {
+    display: none;
+}
+
 /* --------------------- The style for the p5.Js canvas --------------------- */
-canvas{
-	display: block;
-	margin: 10px auto;
+canvas {
+    display: block;
+    margin: 10px auto;
     background: #F2F2F2;
     border: 1px solid #F299A9;
     border-radius: 5px;
     padding: 10px;
     width: 30%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }

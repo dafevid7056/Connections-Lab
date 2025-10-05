@@ -252,9 +252,11 @@ document.getElementById('submitButton').addEventListener('click', function () {
     // Hide the character selection section
     document.getElementById('character-selection').style.display = 'none';
     document.getElementById('instructions').style.display = 'none';
+    document.getElementById('title').style.display = 'none';
     // Show the p5js canvas section
     document.getElementById('canvas-section').style.display = 'block';
     document.getElementById('step2').style.display = 'block';
+    document.getElementById('titleStep2').style.display = 'block';
     // After the button is clicked, each character's selection is stored. The one that got 'Marry' will be displayed as the result image and text.
     // Create arrays to make it easier to work with
     let selects = [select1, select2, select3];
